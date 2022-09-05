@@ -1,0 +1,449 @@
+.hdms__kontakt {
+    position: relative;
+    border-top: 15px solid #E53912;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 20px 15px var(--color-autofill) inset !important;
+}
+
+.hdms__kontakt-arrow {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 120px;
+    border-top: 60px solid var(--color-border);
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+}
+
+.hdms__kontakt-bgBild {
+    position:absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
+    -webkit-animation: kenburns-top 50s ease-in-out infinite alternate both;
+	animation: kenburns-top 50s ease-in-out infinite alternate both;
+}
+
+@-webkit-keyframes kenburns-top {
+0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+}
+100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+}
+}
+@keyframes kenburns-top {
+0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+}
+100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+}
+}
+
+
+.hdms__kontakt-content {
+    position: relative;
+    display: flex;
+    max-width: 1350px;
+    width: 100%;
+    margin-top: 11rem;
+    margin-bottom: 10rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid var(--color-border);
+    border-top-right-radius: 30px;
+}
+
+.hdms__kontakt-info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 600px;
+    background: var(--color-footer);
+    overflow: hidden;
+    min-width: 350px;
+}
+
+.hdms__kontakt-info img {
+    position: absolute;
+    width: 70%;
+    bottom: -30px;
+    left: -30px;
+    transform: rotate(30deg);
+    opacity: 0.3;
+}
+
+.hdms__kontakt-info_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.hdms__kontakt-info h1 {
+    font-family: var(--font-family);
+    font-size: 24px;
+    color: #e2e2e2;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.hdms__kontakt-info_arrow {
+    position: absolute;
+    top: 2.6rem;
+    left: 350px;
+    width: 60px;
+    height: 60px;
+    border-left: 30px solid var(--color-footer);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid transparent;
+    z-index: 10;
+}
+
+.hdms__kontakt-info_content-box {
+    display: flex;
+    align-items: center;
+    color: #0000007c;
+    font-size: 25px;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.hdms__kontakt-info_content-box p {
+    font-family: var(--font-family);
+    color: #e2e2e2;
+    font-size: 16px;
+    margin-left: 1rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.hdms__kontakt-info_content-box h3 {
+    font-family: var(--font-family);
+    color: #e2e2e2ad;
+    font-size: 16px;
+    margin-left: 1rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.hdms__kontakt-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    max-width: 1000px;
+    width: 100%;
+    padding: 2rem 3rem;
+    border-top-right-radius: 30px;
+}
+
+.hdms__kontakt-form_input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.hdms__kontakt-form_input input {
+    height: 50px;
+    border: 2px solid transparent;
+    outline: none;
+    font-family: var(--font-family);
+    font-size: 17px;
+    padding: 10px 20px;
+    padding-left: 60px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 19px;
+    -webkit-border-top-right-radius: 15px;
+    -webkit-border-bottom-left-radius: 19px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-top-right-radius: 15px;
+    -moz-border-bottom-left-radius: 19px;
+    -moz-border-bottom-right-radius: 15px;
+    background: var(--color-text);
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.hdms__kontakt-form_input textarea {
+    height: 110px;
+    width: 100%;
+    max-width: 100%;
+    height: 140px;
+    resize: none;
+    border: 2px solid transparent;
+    outline: none;
+    font-family: var(--font-family);
+    font-size: 17px;
+    padding: 15px 20px;
+    padding-left: 60px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -webkit-border-bottom-left-radius: 19px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-top-right-radius: 15px;
+    -moz-border-bottom-left-radius: 19px;
+    -moz-border-bottom-right-radius: 15px;
+    background: var(--color-text);
+    transition: all 0.2s ease;
+}
+
+.hdms__kontakt-form_input input:focus,
+.hdms__kontakt-form_input textarea:focus {
+    outline: none;
+    transition: all 0.2s ease;
+    background: #fff;
+    border: 2px solid var(--color-border);
+}
+
+.hdms__kontakt-form_input label {
+    font-family: var(--font-family);
+    color: var(--color-text-old);
+    font-weight: 500;
+    padding-left: 10px;
+    opacity: 0.7;
+}
+
+.hdms__kontakt-form_btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 3rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: var(--color-border);
+    color: var(--color-text);
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.hdms__kontakt-form_btn:hover {
+    background :#f15633;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hdms__kontakt-form_btn:active {
+    background :#c02e0d;
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+.hdms__kontakt-form-btn_hover {
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    background:rgba(255, 255, 255, 0.2);
+    transform: rotate(-45deg) translateY(-370%);
+    transition: all 0.7s ease-in-out;
+    opacity: 1;
+}
+
+.hdms__kontakt-form_btn:hover 
+.hdms__kontakt-form-btn_hover {
+    transform: rotate(-45deg) translateY(370%);
+    transition: all 0.7s ease-in-out;
+    opacity: 0.3;
+}
+
+.hdms__kontakt-form p {
+    font-family: var(--font-family);
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    padding-left: 30px;
+}
+
+.brev {
+    position: absolute;
+    font-size: 200px;
+    top: -100px;
+    right: 50px;
+    transform: rotate(45deg);
+    z-index: -1;
+    color: var(--color-footer);
+}
+
+.hdms__kontakt-bgDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hdms__kontakt-form_input-icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    background: var(--color-border);
+    color: var(--color-text);
+    font-size: 1.2rem;
+    border-bottom-left-radius: 15px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.hdms__kontakt-form_input-icon_textarea {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    height: 140px;
+    width: 50px;
+    background: var(--color-border);
+    color: var(--color-text);
+    font-size: 1.2rem;
+    border-bottom-left-radius: 15px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 1255px) {
+    .hdms__kontakt-bgBild {
+        width: auto;
+        height: 110%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .hdms__kontakt-content {
+        flex-direction: column-reverse;
+        margin-top: 9rem;
+        margin-bottom: 8rem;
+    }
+    .hdms__kontakt-info_arrow {
+        transform: rotate(-90deg);
+        top: auto;
+        bottom: 300px;
+        left: 80%;
+    }
+    .hdms__kontakt-info {
+        width: auto;
+        min-width: 100%;
+        height: 300px;
+    }
+    .hdms__kontakt-info_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        z-index: 10;
+        padding: 0.5rem 2rem;
+        text-align: center;
+    }
+    .hdms__kontakt-info img {
+        width: 35%;
+        z-index: 0;
+    }
+    .brev {
+        font-size: 120px;
+        top: -20px;
+        right: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hdms__kontakt-form {
+        padding: 2rem 0;
+    }
+    .hdms__kontakt-info_content {
+        display: flex;
+        flex-direction: column;
+    }
+    .hdms__kontakt-info_content-box {
+        margin: 1rem 0;
+        justify-content: center;
+    }
+    .hdms__kontakt-info img {
+        width: 50%;
+    }
+    .hdms__kontakt-info_content-box p {
+        font-size: 13px;
+    }
+    .hdms__kontakt-form_input-icon {
+        width: 30px;
+        font-size: 15px;
+        box-shadow: none;
+        left: 1%;
+    }
+    .hdms__kontakt-form_input-icon_textarea {
+        width: 30px;
+        font-size: 15px;
+        box-shadow: none;
+        left: 1%;
+    }
+    .hdms__kontakt-form_input label {
+        font-size: 13px;
+    }
+    .hdms__kontakt-form_btn {
+        padding: 0.7rem 2rem;
+        font-size: 15px;
+        margin: 0 auto;
+    }
+    .hdms__kontakt-form_input input {
+        position: relative;
+        padding-left: 40px;
+        width: 98%;
+        left: 1%;
+        font-size: 15px;
+    }
+    .hdms__kontakt-form_input textarea {
+        position: relative;
+        padding-left: 40px;
+        width: 98%;
+        left: 1%;
+        font-size: 15px;
+    }
+}

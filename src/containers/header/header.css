@@ -1,0 +1,212 @@
+.hdms__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0rem 6rem;
+    top: -140px;
+    z-index: 0;
+}
+
+
+.hdms__header-conent {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+    z-index: 100;
+}
+
+.hdms__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    line-height: 1.4;
+    font-size: 53px;
+    z-index: -100;
+}
+
+.hdms__header-content p {
+    display: flex;
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+    z-index: 11;
+}
+
+.hdms__header-content h4 {
+    position: relative;
+    bottom: 12px;
+    display: flex;
+    font-family: var(--font-family);
+    font-size: 18px;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+    z-index: 11;
+    font-weight: 400;
+}
+
+
+.hdms__header-content__tjanster {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    align-items: center;
+    z-index: 10;
+}
+.hdms__header-content__tjanster p {
+    color: #e3e3e3;
+    font-family: var(--font-family);
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.hdms__header-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30%;
+    z-index: -10;
+    pointer-events: none;
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(4, 12, 24, 0) 60%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(4, 12, 24, 0) 60%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(4, 12, 24, 0) 60%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(4, 12, 24, 0) 60%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(4, 12, 24, 0) 60%);
+}
+
+.hdms__header-image img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    z-index: -10;
+    pointer-events: none;
+}
+
+.hdms__header-content__tjanster span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width: 1650px) {
+    .hdms__header {
+        top: -50px;
+    }
+}
+@media screen and (max-width: 1525px) {
+    .hdms__header {
+        top: 0px;
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .hdms__header h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .hdms__header {
+        flex-direction: column;
+    }
+
+    .hdms__header-content {
+        margin: 0 0 3rem;
+    }
+
+    .hdms__header-image {
+        position: relative;
+        top: -380px;
+        max-width: 70%;
+        z-index: -1;
+        pointer-events: none;
+        margin-bottom: -400px;
+        opacity: 0.7;
+    }
+
+    .hdms__header p {
+        font-size: 16px;
+        background: rgba(0, 30, 68, 0.8);
+        padding: 20px 15px;
+        border-top-right-radius: 10px;
+    }
+    .hdms__header-content h4 {
+        font-size: 16px;
+    }
+    .hdms__header-content__tjanster {
+        position: relative;
+        top: -15px;
+        padding-left: 20px;
+        background: rgba(0, 30, 68, 0.8);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hdms__header-image {
+        top: -280px;
+        margin-bottom: -300px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .hdms__header h1 {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .hdms__header p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .hdms__header {
+        padding-bottom: 200px;
+    }
+
+    .hdms__header-image {
+        top: -320px;
+        max-width: 98%;
+
+    }
+    .hdms__header-content h4 {
+        font-size: 12px;
+    }
+    .hdms__header {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hdms__header-image {
+        top: -220px;
+        margin-bottom: -170px;
+    }
+
+    .hdms__header-content__tjanster {
+        flex-wrap: wrap;
+        padding-right: 30px;
+        background: none;
+    }
+
+    .hdms__header p {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
